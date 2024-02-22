@@ -4,10 +4,8 @@ const { AssertionProofPurpose } = require('./lib/jsonld-signatures/purposes/Asse
 const {readFile, documentLoader} = require("./utils");
 const jsonld = require("@digitalcredentials/jsonld");
 
-async function verifyCredential(){
+async function verifyCredential(verifiableCredential){
   console.log("\n\n  ************ Verification Initiated ************ \n")
-
-  const verifiableCredential = readFile();
   const suiteOptions = {
     verificationMethod: verifiableCredential.proof.verificationMethod,
     date: verifiableCredential.proof.created,
