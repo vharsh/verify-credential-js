@@ -24,7 +24,7 @@ async function verifyCredential(){
 
   const result = await vcjs.verifyCredential(vcjsOptions);
 
-  // console.log("\nVerify Credential Response => ", JSON.stringify(result, null, 4));
+  console.log("\nVerify Credential Response => ", JSON.stringify(result, null, 4));
   console.log("\n  Verification Result => ", result.verified);
   console.log("\n\n  ************ Verification Completed ************ \n\n")
 }
