@@ -4,7 +4,7 @@ const {PublicKeyProofPurpose} = require("./lib/jsonld-signatures/purposes/Public
 const {RsaSignature2018} = require("./lib/jsonld-signatures/suites/rsa2018/RsaSignature2018");
 const {Ed25519Signature2018} = require("./lib/jsonld-signatures/suites/ed255192018/Ed25519Signature2018");
 const readFile = () => {
-    const filesRead = fs.readFileSync("vc.json");
+    const filesRead = fs.readFileSync("VC/vc.json");
     return JSON.parse(filesRead.toString());
 }
 
@@ -21,7 +21,7 @@ const ProofPurpose = {
 const getProofPurpose = (verifiableCredential) => {
 
     let purpose ;
-    switch (verifiableCredential.proof.purpose) {
+    switch (verifiableCredential.proof.proofPurpose) {
         case ProofPurpose.Assertion:
             purpose = new AssertionProofPurpose()
             break;
@@ -35,7 +35,7 @@ const getProofPurpose = (verifiableCredential) => {
 const getSuite = (verifiableCredential) => {
     let suite ;
     switch (verifiableCredential.proof.type) {
-        case ProofType.ED25519: {
+        case ProofType.RSA: {
             const suiteOptions = {
                 verificationMethod: verifiableCredential.proof.verificationMethod,
                 date: verifiableCredential.proof.created,
@@ -43,7 +43,7 @@ const getSuite = (verifiableCredential) => {
             suite = new RsaSignature2018(suiteOptions);
             break;
         }
-        case ProofType.RSA: {
+        case ProofType.ED25519: {
             const suiteOptions = {
                 verificationMethod: verifiableCredential.proof.verificationMethod,
                 date: verifiableCredential.proof.created,
