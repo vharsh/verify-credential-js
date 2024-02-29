@@ -1,5 +1,5 @@
 const vcjs = require('@digitalcredentials/vc');
-const {readFile, getProofPurpose, getSuite} = require("./utils");
+const {readFile, getProofPurpose, getSuite, documentLoader} = require("./utils");
 const jsonld = require("@digitalcredentials/jsonld");
 
 async function verifyCredential(){
@@ -13,7 +13,7 @@ async function verifyCredential(){
     purpose,
     suite,
     credential: verifiableCredential,
-    documentLoader: jsonld.documentLoaders.node(),
+    documentLoader: await documentLoader,
   };
 
   const result = await vcjs.verifyCredential(vcjsOptions);
@@ -23,4 +23,6 @@ async function verifyCredential(){
   console.log("\n\n  ************ Verification Completed ************ \n\n")
 }
 
+
 module.exports = {verifyCredential}
+
