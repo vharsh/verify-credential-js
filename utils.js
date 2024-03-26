@@ -8,7 +8,7 @@ const web = require("web-did-resolver");
 const {Ed25519Signature2020} = require("@digitalbazaar/ed25519-signature-2020");
 
 const readFile = () => {
-    const filesRead = fs.readFileSync("VC/vc.json");
+    const filesRead = fs.readFileSync("VC/ed25519vc.json");
     return JSON.parse(filesRead.toString());
 }
 
