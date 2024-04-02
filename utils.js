@@ -6,6 +6,7 @@ const {Ed25519Signature2018} = require("./lib/jsonld-signatures/suites/ed2551920
 const {Resolver} = require("did-resolver");
 const web = require("web-did-resolver");
 const {Ed25519Signature2020} = require("@digitalbazaar/ed25519-signature-2020");
+const {Ed25519VerificationKey2020} = require("@digitalcredentials/ed25519-verification-key-2020");
 
 const readFile = () => {
     const filesRead = fs.readFileSync("VC/ed25519vc.json");
@@ -60,7 +61,7 @@ const getProofPurpose = (verifiableCredential) => {
     return purpose;
 }
 
-const getSuite = (verifiableCredential) => {
+const getSuite = async(verifiableCredential) => {
     let suite ;
     switch (verifiableCredential.proof.type) {
         case ProofType.RSA_Signature_2018: {
@@ -80,8 +81,10 @@ const getSuite = (verifiableCredential) => {
             break;
         }
         case ProofType.ED25519_Signature_2020: {
+            let verificationMethod = verifiableCredential.proof.verificationMethod;
+            const {document} = await documentLoader(verificationMethod);
             const suiteOptions = {
-                verificationMethod: verifiableCredential.proof.verificationMethod,
+                key: await Ed25519VerificationKey2020.from(document.verificationMethod?.find(d => d.id === verificationMethod)),
                 date: verifiableCredential.proof.created,
             };
             suite = new Ed25519Signature2020(suiteOptions);

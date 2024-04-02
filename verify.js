@@ -7,7 +7,7 @@ async function verifyCredential(){
 
   const verifiableCredential = readFile();
   const purpose = getProofPurpose(verifiableCredential);
-  const suite  = getSuite(verifiableCredential);
+  const suite  = await getSuite(verifiableCredential);
 
   const vcjsOptions = {
     purpose,
