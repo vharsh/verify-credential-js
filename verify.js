@@ -4,8 +4,12 @@ const jsonld = require("@digitalcredentials/jsonld");
 
 async function verifyCredential(){
   console.log("\n\n  ************ Verification Initiated ************ \n")
+  let vcFilePath = "VC/vc.json";
+  if(process.argv.length > 1){
+    vcFilePath = process.argv[1];
+  }
 
-  const verifiableCredential = readFile();
+  const verifiableCredential = readFile(vcFilePath);
   const purpose = getProofPurpose(verifiableCredential);
   const suite  = await getSuite(verifiableCredential);
 
@@ -20,6 +24,10 @@ async function verifyCredential(){
 
   console.log("\nVerify Credential Response => ", JSON.stringify(result, null, 4));
   console.log("\n  Verification Result => ", result.verified);
+
+  if(!result.verified){
+    throw new Error("Verification Failed");
+  }
   console.log("\n\n  ************ Verification Completed ************ \n\n")
 }
 

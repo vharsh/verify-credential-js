@@ -8,8 +8,8 @@ const web = require("web-did-resolver");
 const {Ed25519Signature2020} = require("@digitalbazaar/ed25519-signature-2020");
 const {Ed25519VerificationKey2020} = require("@digitalcredentials/ed25519-verification-key-2020");
 
-const readFile = () => {
-    const filesRead = fs.readFileSync("VC/ed25519vc.json");
+const readFile = (vcFilePath) => {
+    const filesRead = fs.readFileSync(vcFilePath);
     return JSON.parse(filesRead.toString());
 }
 
