@@ -11,6 +11,10 @@ on:
         description: "Build Trigger Name"
         default: "VC from qa-inji1"
         required: true
+      vcFilePath:
+        description: "VC File Path"
+        default: "VC/ed25519vc.json"
+        required: true
 
 jobs:
   build:
@@ -28,4 +32,4 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm ci
-      - run: npm run verify
+      - run: npm run verify -- ${{inputs.vcFilePath}}

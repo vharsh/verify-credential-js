@@ -26,3 +26,5 @@ This is a standalone javascript library that does that verification of the crede
 ## Suites Supported
 
 1. RsaSignature2018
+2. Ed25519Signature2018
+3. Ed25519Signature2020
