@@ -1,4 +1,4 @@
-var fs = require('file-system');
+// var fs = require('file-system');
 const {AssertionProofPurpose} = require("./lib/jsonld-signatures/purposes/AssertionProofPurpose");
 const {PublicKeyProofPurpose} = require("./lib/jsonld-signatures/purposes/PublicKeyProofPurpose");
 const {RsaSignature2018} = require("./lib/jsonld-signatures/suites/rsa2018/RsaSignature2018");
@@ -8,10 +8,10 @@ const web = require("web-did-resolver");
 const {Ed25519Signature2020} = require("@digitalbazaar/ed25519-signature-2020");
 const {Ed25519VerificationKey2020} = require("@digitalcredentials/ed25519-verification-key-2020");
 
-const readFile = (vcFilePath) => {
-    const filesRead = fs.readFileSync(vcFilePath);
-    return JSON.parse(filesRead.toString());
-}
+// const readFile = (vcFilePath) => {
+//     const filesRead = fs.readFileSync(vcFilePath);
+//     return JSON.parse(filesRead.toString());
+// }
 
 const ProofType  = {
     ED25519_Signature_2018: 'Ed25519Signature2018',
