@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is a standalone javascript library that does that verification of the credential ",
   "main": "verify.js",
+  "module": "verify.js",
   "scripts": {
     "verify": "node -e 'require(`./verify.js`).verifyCredential()'",
     "test": "echo \"Error: no test specified\" && exit 1",
