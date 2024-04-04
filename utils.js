@@ -4,8 +4,8 @@ const {RsaSignature2018} = require("./lib/jsonld-signatures/suites/rsa2018/RsaSi
 const {Ed25519Signature2018} = require("./lib/jsonld-signatures/suites/ed255192018/Ed25519Signature2018");
 const {Resolver} = require("did-resolver");
 const web = require("web-did-resolver");
-const {Ed25519Signature2020} = require("@digitalcredentials/ed25519-signature-2020");
-const {Ed25519VerificationKey2020} = require("@digitalcredentials/ed25519-verification-key-2020");
+const {Ed25519Signature2020} = require("@digitalbazaar/ed25519-signature-2020");
+const {Ed25519VerificationKey2020} = require("@digitalbazaar/ed25519-verification-key-2020");
 
 const ProofType  = {
     ED25519_Signature_2018: 'Ed25519Signature2018',

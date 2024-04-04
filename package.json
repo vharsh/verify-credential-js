@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/tw-mosip/verify-credential-js#readme",
   "dependencies": {
+    "@digitalbazaar/ed25519-signature-2020": "^3.0.0",
+    "@digitalbazaar/ed25519-verification-key-2020": "^3.3.0",
     "@digitalbazaar/rsa-signature-2018": "digitalbazaar/rsa-signature-2018",
     "@digitalbazaar/rsa-verification-key-2018": "digitalbazaar/rsa-verification-key-2018",
-    "@digitalcredentials/ed25519-verification-key-2020": "^4.0.0",
-    "@digitalcredentials/ed25519-signature-2020": "^4.0.0",
     "@digitalcredentials/jsonld": "^5.2.1",
     "@digitalcredentials/jsonld-signatures": "^9.3.1",
     "@digitalcredentials/vc": "^1.1.2",
