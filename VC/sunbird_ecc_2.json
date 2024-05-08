@@ -1,0 +1,44 @@
+{
+        "id": "did:rcw:aebf36c6-c5de-4505-a30b-90cd35d7ece8",
+        "type": [
+            "VerifiableCredential",
+            "LifeInsuranceCredential",
+            "InsuranceCredential"
+        ],
+        "proof": {
+            "type": "Ed25519Signature2020",
+            "created": "2024-05-07T13:28:24Z",
+            "proofValue": "zniv6gz1QweckrUszStj575uaEy8F3TaPwEBJgt9ZMakYUb5Ea9RP5kHC9cQkRPmQaYgBYN47c1cLgRJyBkHoQho",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:likhitharl.github.io:DID-Resolve:de027c87-a3e9-4113-8a63-2f053ae76e15#key-0"
+        },
+        "issuer": "did:web:likhitharl.github.io:DID-Resolve:de027c87-a3e9-4113-8a63-2f053ae76e15",
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://holashchand.github.io/test_project/insurance-context.json",
+            {
+                "LifeInsuranceCredential": {
+                    "@id": "InsuranceCredential"
+                }
+            },
+            "https://w3id.org/security/suites/ed25519-2020/v1"
+        ],
+        "issuanceDate": "2024-05-07T13:28:24.567Z",
+        "expirationDate": "2024-06-06T13:28:24.561Z",
+        "credentialSubject": {
+            "id": "did:jwk:eyJrdHkiOiJFQyIsInVzZSI6InNpZyIsImNydiI6IlAtMjU2Iiwia2lkIjoieVpldEM4T1lUdlNmeWhuWGloNnp5NktJUExKT0FWVzNuYmJucnQ5SHktUSIsIngiOiJBRXQxcUN3d19LS3FxVWlJZVJBLUo5cUQ2TEF6V0JIbTlVZjhWa19xM0w0IiwieSI6Ik02ektoSFFUdVRTdGxPM1hsdWFoUnN2dU9TYjZpdEU3RjZCUXNUazFnalEiLCJhbGciOiJFUzI1NiJ9",
+            "dob": "1993-12-24",
+            "email": "varmar@gmail.com",
+            "gender": "Male",
+            "mobile": "0123456789",
+            "benefits": [
+                "Critical Surgery",
+                "Full body checkup"
+            ],
+            "fullName": "Rohit Varma",
+            "policyName": "Start Insurance Gold Premium",
+            "policyNumber": "1234567",
+            "policyIssuedOn": "2023-04-20T20:48:17.684Z",
+            "policyExpiresOn": "2033-04-20T20:48:17.684Z"
+        }
+    }
