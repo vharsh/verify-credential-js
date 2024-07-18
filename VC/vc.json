@@ -1,5 +1,4 @@
 {
-    "credential": {
         "id": "did:rcw:3978fd8b-bd0e-499c-bc98-8eb517371e9a",
         "type": [
             "VerifiableCredential",
@@ -41,14 +40,4 @@
             "policyIssuedOn": "2023-04-20T20:48:17.684Z",
             "policyExpiresOn": "2033-04-20T20:48:17.684Z"
         }
-    },
-    "credentialSchemaId": "did:schema:ffaa72da-2a7f-47e5-b8b3-dcbf9cd44a38",
-    "createdAt": "2024-07-18T13:47:57.270Z",
-    "updatedAt": "2024-07-18T13:47:57.270Z",
-    "createdBy": "",
-    "updatedBy": "",
-    "tags": [
-        "Harsh Vardhan Random",
-        "1999-10-24"
-    ]
-}
+    }
