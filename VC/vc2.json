@@ -1,0 +1,39 @@
+{
+        "id": "did:rcw:f319736b-e920-4c00-a53a-7074e12419e7",
+        "type": [
+            "VerifiableCredential",
+            "InsuranceCredential"
+        ],
+        "proof": {
+            "type": "Ed25519Signature2020",
+            "created": "2024-07-22T07:02:23Z",
+            "proofValue": "z63RPYwCKq6ygEjZ6XQec6zVVKuCSsrDyKnwdZUoHwuWV43yiuijSSzBA3PAUB1VsoNE9PxMY989ddkTXdWjBLS7M",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "did:web:api.dev1.mosip.net:identity-service:ed6e37fc-2f8f-4121-b9f7-7214529feb04#key-0"
+        },
+        "issuer": "did:web:api.dev1.mosip.net:identity-service:ed6e37fc-2f8f-4121-b9f7-7214529feb04",
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://holashchand.github.io/test_project/insurance-context.json",
+            "https://w3id.org/security/suites/ed25519-2020/v1"
+        ],
+        "issuanceDate": "2024-07-22T07:02:23.331Z",
+        "expirationDate": "2033-04-20T20:48:17.684Z",
+        "credentialSubject": {
+            "id": "did:web:api.dev1.mosip.net:identity-service:ed6e37fc-2f8f-4121-b9f7-7214529feb04",
+            "dob": "1999-10-24",
+            "type": "InsuranceCredential",
+            "email": "abhishek@gmail.com",
+            "gender": "Male",
+            "mobile": "0123456789",
+            "benefits": [
+                "Critical Surgery",
+                "Full body checkup"
+            ],
+            "fullName": "Harsh Vardhan v3",
+            "policyName": "Start Insurance Gold Premium",
+            "policyNumber": "123456799",
+            "policyIssuedOn": "2023-04-20T20:48:17.684Z",
+            "policyExpiresOn": "2033-04-20T20:48:17.684Z"
+        }
+}
