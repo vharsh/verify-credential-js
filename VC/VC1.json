@@ -1,0 +1,101 @@
+{
+    "credential": {
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1"
+        ],
+        "issuer": "https://vharsh.github.io/DID/mock-rsac.json",
+        "type": [
+            "VerifiableCredential",
+            "MockVerifiableCredential"
+        ],
+        "issuanceDate": "2024-10-14T12:45:19.930Z",
+        "expirationDate": "2026-10-14T12:45:19.930Z",
+        "credentialSubject": {
+            "gender": [
+                {
+                    "language": "eng",
+                    "value": "Male"
+                },
+                {
+                    "language": "fra",
+                    "value": "Mâle"
+                },
+                {
+                    "language": "ara",
+                    "value": "ذكر"
+                }
+            ],
+            "postalCode": 45009,
+            "fullName": [
+                {
+                    "language": "fra",
+                    "value": "Siddharth K Mansour"
+                },
+                {
+                    "language": "ara",
+                    "value": "تتگلدكنسَزقهِقِفل دسييسيكدكنوڤو"
+                },
+                {
+                    "language": "eng",
+                    "value": "Siddharth K Mansour"
+                }
+            ],
+            "dateOfBirth": "1987/11/25",
+            "province": [
+                {
+                    "language": "fra",
+                    "value": "yuān 2"
+                },
+                {
+                    "language": "ara",
+                    "value": "يَُانꉛ⥍"
+                },
+                {
+                    "language": "eng",
+                    "value": "yuan wee"
+                }
+            ],
+            "phone": "+919427357934",
+            "addressLine1": [
+                {
+                    "language": "fra",
+                    "value": "yuān⥍"
+                },
+                {
+                    "language": "ara",
+                    "value": "$لُنگᆑ"
+                },
+                {
+                    "language": "eng",
+                    "value": "Slung"
+                }
+            ],
+            "region": [
+                {
+                    "language": "fra",
+                    "value": "yuān 3"
+                },
+                {
+                    "language": "ara",
+                    "value": "$لُنگᆑ"
+                },
+                {
+                    "language": "eng",
+                    "value": "yuan wee 3"
+                }
+            ],
+            "vcVer": "VC-V1",
+            "UIN": 1234567,
+            "email": "siddhartha.km@gmail.com",
+            "id": "https://api.dev1.mosip.net/v1/mock-identity-system/identity/1234567",
+            "face": "sqauare logo"
+        },
+        "proof": {
+            "type": "RsaSignature2018",
+            "created": "2024-10-14T07:15:19Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "https://vharsh.github.io/DID/mock-rsa.json",
+            "jws": "eyJ4NXQjUzI1NiI6ImNJSGR5cmlDWVQyQkR2ZWVWMUtHZDk3cThRYW1YX3ZRaGJrY0otNHR6ODgiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJraWQiOiI5U1JJY1R3eXdsS2lmWUY5djdKMWJlY0VQLUVLd21wYzZqdXMzUlZaMnFrIiwiYWxnIjoiUlMyNTYifQ..QNEyqSpj0rugKOKTW3pQukdlilT97akR0wxGMawOIXk7kefoQwQaNHCIeGM-jeYemfVfkv8wvazF8wwimtsUBGI2hLomu0fmW-Y6P5xZ6YMRV4fADOjZ5NJyBYKeYQxigX8MsQ0u0YBYHEy6HpgCXEnuo9YglLTBYzYFyUhATjMZaut9bmvknEg42N2nHFqOv-9Z-Wu4a4NIXTR2YfBQc4iMHFDMC03hmpM1rFxhV-KBrW2l6lrOpl8q2Ir1IMACaRX81RRE_K6E0rv3enmCe9CARCFVyoQ6y78yxM6tu574-Tng-YCp5hE-G_yq0M7F72R4KL9o3yP6-9H3CiYw7Q"
+        }
+    }
+}
