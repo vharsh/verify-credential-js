@@ -1,5 +1,4 @@
 {
-    "credential": {
         "@context": [
             "https://www.w3.org/2018/credentials/v1"
         ],
@@ -97,5 +96,4 @@
             "verificationMethod": "https://vharsh.github.io/DID/mock-rsa.json",
             "jws": "eyJ4NXQjUzI1NiI6ImNJSGR5cmlDWVQyQkR2ZWVWMUtHZDk3cThRYW1YX3ZRaGJrY0otNHR6ODgiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJraWQiOiI5U1JJY1R3eXdsS2lmWUY5djdKMWJlY0VQLUVLd21wYzZqdXMzUlZaMnFrIiwiYWxnIjoiUlMyNTYifQ..QNEyqSpj0rugKOKTW3pQukdlilT97akR0wxGMawOIXk7kefoQwQaNHCIeGM-jeYemfVfkv8wvazF8wwimtsUBGI2hLomu0fmW-Y6P5xZ6YMRV4fADOjZ5NJyBYKeYQxigX8MsQ0u0YBYHEy6HpgCXEnuo9YglLTBYzYFyUhATjMZaut9bmvknEg42N2nHFqOv-9Z-Wu4a4NIXTR2YfBQc4iMHFDMC03hmpM1rFxhV-KBrW2l6lrOpl8q2Ir1IMACaRX81RRE_K6E0rv3enmCe9CARCFVyoQ6y78yxM6tu574-Tng-YCp5hE-G_yq0M7F72R4KL9o3yP6-9H3CiYw7Q"
         }
-    }
 }
