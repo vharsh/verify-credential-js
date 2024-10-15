@@ -1,5 +1,4 @@
 {
-    "credential": {
         "@context": [
             "https://www.w3.org/2018/credentials/v1",
             "https://vharsh.github.io/DID/mock-context.json"
@@ -99,4 +98,3 @@
             "jws": "eyJ4NXQjUzI1NiI6ImNJSGR5cmlDWVQyQkR2ZWVWMUtHZDk3cThRYW1YX3ZRaGJrY0otNHR6ODgiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJraWQiOiI5U1JJY1R3eXdsS2lmWUY5djdKMWJlY0VQLUVLd21wYzZqdXMzUlZaMnFrIiwiYWxnIjoiUlMyNTYifQ..LDXeWEOcf3XbnPDiZSIMMO96DvlkbrdzNYZmVBG6Sq8XHgIuv4yck41d9D6I6RZDSnsaxLuGY7F-q0_0RGE04deRrRRbBqZ6EAgT8KlVkVimRhE5kzPIcWJIH-YTNmpe-3Ht6z2kSGYJMMzSlrnrVaoccOTBf-APfHbZ139zTY0hBYBpw78q1UMCNUI29onXG_-DUPcGB0zhN0YKYIHfD7C4VwVEzNLtMWukJfvEV21tl3YsaPGO13HkarSzY6lfgOC7Dr4Uph5GCN-ghniE5VShurTUXjh0TNZmcYvLJSBrTMrPbaWNBgY6Rh67EtzHpdXLmCXrZTbqmIhX9ACwBQ"
         }
     }
-}
