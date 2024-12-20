@@ -1,0 +1,36 @@
+{
+        "issuanceDate": "2024-12-20T02:03:00.405Z",
+        "credentialSubject": {
+            "gender": "Male",
+            "primaryCropType": "Maize",
+            "mobileNumber": "9876543210",
+            "postalCode": "453000",
+            "landArea": "3 hectares",
+            "fullName": "John Doe",
+            "secondaryCropType": "Rice",
+            "dateOfBirth": "25-05-1990",
+            "farmerID": "987654321",
+            "villageOrTown": "Koramangala",
+            "district": "Bangalore",
+            "state": "Karnataka",
+            "landOwnershipType": "Owner"
+        },
+        "id": "https://mosip.io/credential/6d6d45bc-6ead-4272-9592-cc4dc7b2f1f4",
+        "type": [
+            "VerifiableCredential",
+            "FarmerCredential"
+        ],
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://piyush7034.github.io/my-files/farmer.json"
+        ],
+        "issuer": "https://vharsh.github.io/DID/vharsh-rsa-localc.json",
+        "expirationDate": "2026-12-20T02:03:00.405Z",
+        "proof": {
+            "type": "RsaSignature2018",
+            "created": "2024-12-20T02:03:00Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "https://vharsh.github.io/DID/vharsh-rsa-local.json",
+            "jws": "eyJ4NXQjUzI1NiI6IktpMjl0aDRkOFM0eTQ5ZGVHVFZEekpuQ2RYUEIzNEtJVnlkRTRmNVJZT2MiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJraWQiOiJOTDVSbmJCVjJZclE3eTkzMjZGZlNWMEpqWk1PY1NteVB2NU9EZ1BGQmJNIiwiYWxnIjoiUlMyNTYifQ..gL9Vu_hQmANF97wDW9Bfz-6fDOsZTZ4iSXe1ht56-74APKj6lD_bkWtqry-pGbUVxGjdMg1X-0h4YErGxzfMw58BsovZpolpZ8nYulPerh1yUVDeiufvYHwlAnAW0LlGoNoJr1BG0rjwwds8RHzyXnu5m3oVLSsCepfEzSn2Lv1iFILUhjB1unP-jdsjwwDLRwQKZVIxCU-bQtxujpIqSlaUuCqkU6iHjzgysWBkOj0yahw6vraaLS2fINHekhElBQrLrH44UUSZX-5ZOddgd7iWlMjS1Y5dO-pbfYAobdrxGFd0Jxy6XDaKmGxqQ3q67iI6DIWLZ1WFNn_t2Wv1MQ"
+        }
+    }
