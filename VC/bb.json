@@ -1,0 +1,35 @@
+{
+        "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://piyush7034.github.io/my-files/farmer.json"
+        ],
+        "issuer": "https://vharsh.github.io/DID/mock-rsac-piyush.json",
+        "type": [
+            "VerifiableCredential",
+            "FarmerCredential"
+        ],
+        "issuanceDate": "2024-12-20T06:02:42.522Z",
+        "expirationDate": "2026-12-20T06:02:42.522Z",
+        "credentialSubject": {
+            "fullName": "Mary Smith",
+            "mobileNumber": "8765432109",
+            "dateOfBirth": "12-11-1985",
+            "gender": "Female",
+            "state": "Uttar Pradesh",
+            "district": "Lucknow",
+            "villageOrTown": "Gomti Nagar",
+            "postalCode": "226010",
+            "landArea": "2.5 acres",
+            "landOwnershipType": "Tenant",
+            "primaryCropType": "Rice",
+            "secondaryCropType": "Wheat",
+            "farmerID": "123456789"
+        },
+        "proof": {
+            "type": "RsaSignature2018",
+            "created": "2024-12-20T00:32:42Z",
+            "proofPurpose": "assertionMethod",
+            "verificationMethod": "https://vharsh.github.io/DID/mock-rsa-piyush.json",
+            "jws": "eyJ4NXQjUzI1NiI6InVJdzEtX2pXa3Itc3BWWUZjSGp1MmRjQWJmSFFQbEJ3dk80VXpVbkgyVE0iLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJraWQiOiJXWC04djRHZWxJQ0hqdE12bzhoVmJ3VXZxRlktWVBVdG1td1RVc01ISnpFIiwiYWxnIjoiUlMyNTYifQ..XJmIyFOJ6RHuJdQLfb51xi2cchOMFGpZbSbM3bkkOxtHAyZ1KpO2XaAxS0hXJ8j-iZpmfG30Z-qsGvxYsjUS9M6ODlI38Lusg-lfEERbrkbA4jILq_2LjRirAhBXXqE9RWVaNcgeu143-SGuHlWMtG_qefAQZTpGNAU4Qi6yb6MFT1eR_BW1PUswzTo7Sz5QIMNxB3cuB347QdsEd3mQBIfcJD1HizIJ-vY_l7-LcAfuE9qjh-6C8bpELvibbLUcBCUCC5uJWQQr6CfFd9-IDwPTrIYEnIcuXt9pi_OM_4FQtAfi6KKK5b1xdnNzHIbhyZ3mOUd4KxINycN9TFOBqg"
+        }
+    }
